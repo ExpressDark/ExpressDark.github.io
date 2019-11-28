@@ -14,7 +14,7 @@
 
 可知当前电脑安装的git版本为2.24.0版本
 
-<img src="C:\expressDark\source\picture\git\git1.png" style="zoom:100%;" />
+![](Git和GitHub的使用/git1.png)
 
 
 
@@ -46,7 +46,7 @@ $ git status
 
 可以查看当前状态，如图所示，我们添加的txt发生了修改，可以将其添加到本地仓中进行更新。
 
-![](C:\expressDark\source\picture\git\git2.png)
+![](Git和GitHub的使用/git2.png)
 
 在命令行中输入以下指令
 
@@ -60,7 +60,7 @@ $ git add test.txt
 $ git commit -m "修改test文件"
 ~~~
 
-![](C:\expressDark\source\picture\git\git3.png)
+![](Git和GitHub的使用/git3.png)
 
 如果出现上图所示，则说明添加说明成功，其中-m是message的缩写，“ ”内为本次修改的说明内容。为了更好的管理和修改版本库，该操作是非常有必要的，甚至为后期的回溯版本提供了足够的便利。
 
@@ -76,7 +76,7 @@ $ git diff test.txt
 
 其效果为
 
-![](C:\expressDark\source\picture\git\git4.png)
+![](Git和GitHub的使用/git4.png)
 
 白色字体是未修改部分，红色字体是删除部分，绿色字体是新添加部分；
 
@@ -86,7 +86,7 @@ $ git diff test.txt
 $ git log
 ~~~
 
-![](C:\expressDark\source\picture\git\git5.png)
+![](Git和GitHub的使用/git5.png)
 
 git log命令显示最近提到最远提交的所有日志，最近的一次操作是修改test文件，在往前是修改test，fix confilt，现在我们不想要这些修改信息，想进行回溯之前的版本，执行下面命令行
 
@@ -96,7 +96,7 @@ $ git reset 118ab82154f13bd38eabd8f0cd3531ea6a92ac37
 
 执行未出现问题的话，就回溯到了fix confilt版本，在执行git log可以看到如下效果
 
-![](C:\expressDark\source\picture\git\git6.png)
+![](Git和GitHub的使用/git6.png)
 
 此时使用指令$ git diff test.txt，发现当前有很多不同，原因是，工作区的文件已经进行修改，而并没有传到版本库中；为了让工作区也恢复原状，需要执行执行撤销命令
 
@@ -106,7 +106,7 @@ $ git checkout test.txt
 
 能够获得如图效果
 
-![](C:\expressDark\source\picture\git\git7.png)
+![](Git和GitHub的使用/git7.png)
 
 除了在相应文件夹中删除指定的文件夹这种删除修改操作外，我们还可以用git中的rm指令用于删除文件，如果这个文件已经添加到版本库中，使用git rm指令将会永久删除该文件。
 
