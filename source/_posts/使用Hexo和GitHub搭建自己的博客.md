@@ -74,4 +74,4 @@ Hexo提供了快捷便利的一键部署功能。即$ hexo d。但是在部署�
 
 [Hexo官网]( https://hexo.io/zh-cn/docs/ )
 
-[码匠笔记搭建博客B站
+[简书个人博客搭建](https://www.jianshu.com/p/c7397489757c)
